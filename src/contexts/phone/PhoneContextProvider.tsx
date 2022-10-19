@@ -10,9 +10,7 @@ const PhoneContextProvider = ({
 }: PhoneContextProviderProps): JSX.Element => {
   const [phoneNumbers, setPhoneNumbers] = useState(0);
 
-  const [isCalling, setIsCalling] = useState<boolean>(false);
-
-  setIsCalling(false);
+  const [isCalling] = useState(false);
 
   const changePhoneNumbers = (number: number) => {
     setPhoneNumbers(number);
