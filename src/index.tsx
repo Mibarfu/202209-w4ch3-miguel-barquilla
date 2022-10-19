@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import PhoneContextProvider from "./contexts/phone/PhoneContextProvider";
 
 const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
+  document.querySelector(".container") as HTMLElement
 );
 
 root.render(

@@ -1,0 +1,6 @@
+.message {
+  line-height: 50px;
+}
+.off {
+  visibility: hidden !important;
+}
