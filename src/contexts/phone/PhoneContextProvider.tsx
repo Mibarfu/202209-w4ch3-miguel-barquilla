@@ -12,6 +12,8 @@ const PhoneContextProvider = ({
 
   const [isCalling, setIsCalling] = useState<boolean>(false);
 
+  setIsCalling(false);
+
   const changePhoneNumbers = (number: number) => {
     setPhoneNumbers(number);
   };
