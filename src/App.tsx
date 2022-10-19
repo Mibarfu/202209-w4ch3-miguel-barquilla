@@ -1,7 +1,12 @@
 import "./App.css";
+import Info from "./components/Info/Info";
 
 const App = (): JSX.Element => {
-  return <div className="App"></div>;
+  return (
+    <>
+      <Info />
+    </>
+  );
 };
 
 export default App;
