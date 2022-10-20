@@ -8,18 +8,14 @@ interface PhoneContextProviderProps {
 const PhoneContextProvider = ({
   children,
 }: PhoneContextProviderProps): JSX.Element => {
-  const [phoneNumbers, setPhoneNumbers] = useState(0);
+  const [isCalling, setIsCalling] = useState(false);
 
-  const [isCalling] = useState(false);
-
-  const changePhoneNumbers = (number: number) => {
-    setPhoneNumbers(number);
+  const changeStateIsCalling = (state: boolean) => {
+    setIsCalling(state);
   };
 
   return (
-    <PhoneContext.Provider
-      value={{ phoneNumbers, changePhoneNumbers, isCalling }}
-    >
+    <PhoneContext.Provider value={{ changeStateIsCalling, isCalling }}>
       {children}
     </PhoneContext.Provider>
   );

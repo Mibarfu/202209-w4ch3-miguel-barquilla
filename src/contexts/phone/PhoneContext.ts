@@ -1,8 +1,7 @@
 import { createContext } from "react";
 
 interface PhoneContextStructure {
-  phoneNumbers: number;
-  changePhoneNumbers: (number: number) => void;
+  changeStateIsCalling: (isCalling: boolean) => void;
   isCalling: boolean;
 }
 
